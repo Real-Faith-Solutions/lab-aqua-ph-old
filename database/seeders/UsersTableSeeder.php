@@ -28,6 +28,9 @@ class UsersTableSeeder extends Seeder
 
         User::create([
             'name'		    => 'LIMS Administrator',
+            'role'		    => 'super_admin',
+            'status'		    => '1',
+            'email_verified_at'		    => '2023-05-10 13:29:43',
             'email'		    => 'admin@lims.com',
             'password'	    => Hash::make('12345'),
         ]);
