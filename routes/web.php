@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Helpers\Helpers;
-use App\Http\Controllers\ForbesTopController;
+// use App\Http\Controllers\ForbesTopController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AnalysisRequestController;
@@ -33,18 +33,18 @@ use App\Http\Controllers\AdminRegisteredCommand;
 
 Route::get('/', function () {
         return view('login');
-    })->name('/');
+    });
 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
 */
-Route::get('dashboard', [CustomAuthController::class, 'dashboard']); 
+Route::get('dashboard', [CustomAuthController::class, 'dashboard']);
 Route::get('login', [CustomAuthController::class, 'index'])->name('login');
-Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 
+Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom');
 Route::get('registration', [CustomAuthController::class, 'registration'])->name('register-user');
-Route::post('custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom'); 
+Route::post('custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom');
 Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout');
 
 Route::group([
@@ -109,17 +109,17 @@ Route::group([
     'prefix'     => 'user',
     'middleware' => 'userauth',
 ], function () {
-    Route::get('dashboard', [ForbesTopController::class, 'getMostCounts']);
+    // Route::get('dashboard', [ForbesTopController::class, 'getMostCounts']);
 
     /// Table Records Functionality Routes
-    Route::get('csv-records', [ForbesTopController::class, 'getRecipients']);
-    Route::post('csv-search', [ForbesTopController::class, 'findRecipients']);
+    // Route::get('csv-records', [ForbesTopController::class, 'getRecipients']);
+    // Route::post('csv-search', [ForbesTopController::class, 'findRecipients']);
 
     /// CSV Functionality Routes
     Route::get('csv-upload', function () {
         return view('csvuploader');
     });
-    Route::post('csv-upload', [ForbesTopController::class, 'uploadCSVContent']);
+    // Route::post('csv-upload', [ForbesTopController::class, 'uploadCSVContent']);
 
     Route::get('message', function () {
         return view('message');
@@ -216,7 +216,7 @@ Route::group([
         Route::get('user', [CustomAuthController::class, 'getUsersRolePage']);
         Route::get('srole', [AdminRegisteredCommand::class, 'index'])->name('srole');
         Route::get('status/{id}', [AdminRegisteredCommand::class, 'status'])->name('status');
-        Route::get('role',  function()  
+        Route::get('role',  function()
         {
             return view('admin.user-management.role');
         });
