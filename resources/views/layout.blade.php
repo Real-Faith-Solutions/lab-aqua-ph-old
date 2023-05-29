@@ -71,7 +71,7 @@
                         <!-- <a class="collapse-item" href="{{ config('app.url') }}admin/record/payment-info">Add payment</a> -->
                         <a class="collapse-item" href="" data-bs-toggle="modal" data-bs-target="#addClient">Add Client Account</a>
                         <a class="collapse-item" href="{{ config('app.url') }}admin/app-forms/analysis-request">Add Analysis Request</a>
-                        {{-- @if (Session::get('role') == 'pchem_manager' OR Session::get('role') == 'micro_manager' OR Session::get('role') == 'super_admin') --}}
+                        {{-- @if (Session::get('role') == 'pchem_manager' OR Session::get('role') == 'micro_manager' OR Session::get('role') == 'Super Admin') --}}
                         <a class="collapse-item" href="{{ config('app.url') }}admin/report/lab-status">Lab Results Status</a>
                         {{-- @endif --}}
 
@@ -87,7 +87,7 @@
                 </a>
                 <div id="collapseTwos" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        @if (Session::get('role') == 'pchem_manager' OR Session::get('role') == 'micro_manager' OR Session::get('role') == 'super_admin' OR Session::get('role') == 'laboratory_asst')
+                        @if (Session::get('role') == 'pchem_manager' OR Session::get('role') == 'micro_manager' OR Session::get('role') == 'Super Admin' OR Session::get('role') == 'laboratory_asst')
                         <a class="collapse-item" href="" data-bs-toggle="modal" data-bs-target="#addLabAcceptance">Lab Acceptance</a>
                         <a class="collapse-item" href="{{ config('app.url') }}admin/record/lab-work-order">Lab Work Order</a>
                         <a class="collapse-item" href="{{ config('app.url') }}admin/record/lab-approval">Lab Approval</a>
@@ -119,11 +119,11 @@
                         <!-- <div class="collapse-divider"></div>
 
                         <h6 class="collapse-header">Records Pages:</h6> -->
-                        @if (Session::get('role') == 'super_admin')
+                        @if (Session::get('role') == 'Super Admin')
                         <a class="collapse-item" href="{{ config('app.url') }}admin/record/analysis-request">Analysis Request</a>
                         @endif
                         <a class="collapse-item" href="{{ config('app.url') }}admin/record/facility">Facility</a>
-                        @if (Session::get('role') == 'super_admin')
+                        @if (Session::get('role') == 'Super Admin')
                         <a class="collapse-item" href="{{ config('app.url') }}admin/user-management/client">Clients List</a>
                         @endif
 
@@ -139,7 +139,7 @@
                 </a>
                 <div id="collapseUser" class="collapse" aria-labelledby="headingFunding" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        @if (Session::get('role') == 'super_admin')
+                        @if (Session::get('role') == 'Super Admin')
                         <a class="collapse-item" href="{{ config('app.url') }}admin/user-management/srole">Users List</a>
                         @endif
                         <a class="collapse-item" href="{{ config('app.url') }}admin/user-management/role">Roles</a>
