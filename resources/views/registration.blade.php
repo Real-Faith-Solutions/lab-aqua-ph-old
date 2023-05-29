@@ -30,17 +30,17 @@
                                     <select id="users" class="form-control" name="role" required autofocus
                                         style="border-radius: 90px">
                                         <option selected disabled>Select roles</option>
-                                        <option value="super_admin">SUPER ADMIN</option>
-                                        <option value="sales_manager">SALES MANAGER</option>
-                                        <option value="marketing_manager">MARKETING MANAGER</option>
-                                        <option value="service_coordinator">SERVICE COORDINATOR</option>
-                                        <option value="admin_asst">ADMIN ASST</option>
+                                        <option value="Super Admin">Super Admin</option>
+                                        <option value="Admin Asstistant">Admin Asstistant</option>
+                                        <option value="Laboratory Asstistant">Laboratory Asstistant</option>
+                                        <option value="Service Coordinator">Service Coordinator</option>
+                                        <option value="Marketing Manager">Marketing Manager</option>
+                                        <option value="Sales Manager">Sales Manager</option>
+                                        <option value="Pchem Manager">Pchem Manager</option>
+                                        <option value="Pchem Analyst">Pchem Analyst</option>
+                                        <option value="Micro Manager">Micro Manager</option>
+                                        <option value="Micro Analyst">Micro Analyst</option>
 
-                                        <option value="micro_analyst">MICRO ANALYST</option>
-                                        <option value="pchem_analyst">PCHEM ANALYST</option>
-                                        <option value="micro_manager">MICRO MANAGER</option>
-                                        <option value="pchem_manager">PCHEM MANAGER</option>
-                                        <option value="laboratory_asst">LABORATORY ASST</option>
 
                                     </select>
                                     @if ($errors->has('email'))
