@@ -1,4 +1,4 @@
-@extends('layout_plain')
+@extends('guest')
 
 @section('content')
 <br/><br/>

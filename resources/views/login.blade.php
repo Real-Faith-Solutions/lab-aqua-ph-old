@@ -1,6 +1,6 @@
-@extends('layout_plain')
+@extends('guest')
 @section('content')
-<main class="login-form p-5" style="background:#173d4e">
+
     <div class="cotainer">
         <div class="row justify-content-center">
             <div class="col-md-6">
@@ -63,5 +63,5 @@
             </div>
         </div>
     </div>
-</main>
+
 @endsection

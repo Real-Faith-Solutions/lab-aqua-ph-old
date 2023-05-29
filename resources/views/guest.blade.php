@@ -10,10 +10,10 @@
 </head>
 
 <body style="background:#173d4e">
-    
+
         <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
-                <div class="container-fluid p-0">
+                <div class="container-fluid p-5">
                     @yield('content')
                 </div>
             </div>
