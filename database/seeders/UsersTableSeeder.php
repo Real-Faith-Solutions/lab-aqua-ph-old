@@ -31,7 +31,7 @@ class UsersTableSeeder extends Seeder
             'status'		    => '1',
             'email_verified_at'		    => '2023-05-10 13:29:43',
             'email'		    => 'villanuevajoshua27@gmail.com',
-            'password'	    => Hash::make('P@$$w0rd!'),
+            'password'	    => Hash::make('Pa$$w0rd!'),
         ]);
         User::create([
             'name'		    => 'Jack Flores',
@@ -39,7 +39,7 @@ class UsersTableSeeder extends Seeder
             'status'		    => '1',
             'email_verified_at'		    => '2023-05-10 13:29:43',
             'email'		    => 'qarehydiko@mailinator.com',
-            'password'	    => Hash::make('P@$$w0rd!'),
+            'password'	    => Hash::make('Pa$$w0rd!'),
         ]);
         User::create([
             'name'		    => 'Nichole Peters',
@@ -47,7 +47,7 @@ class UsersTableSeeder extends Seeder
             'status'		    => '1',
             'email_verified_at'		    => '2023-05-10 13:29:43',
             'email'		    => 'caxev@mailinator.com',
-            'password'	    => Hash::make('P@$$w0rd!'),
+            'password'	    => Hash::make('Pa$$w0rd!'),
         ]);
         User::create([
             'name'		    => 'Valentine Macdonald',
@@ -55,7 +55,7 @@ class UsersTableSeeder extends Seeder
             'status'		    => '1',
             'email_verified_at'		    => '2023-05-10 13:29:43',
             'email'		    => 'fafa@mailinator.com',
-            'password'	    => Hash::make('P@$$w0rd!'),
+            'password'	    => Hash::make('Pa$$w0rd!'),
         ]);
         User::create([
             'name'		    => 'Branden Bernard',
@@ -63,7 +63,7 @@ class UsersTableSeeder extends Seeder
             'status'		    => '1',
             'email_verified_at'		    => '2023-05-10 13:29:43',
             'email'		    => 'qegecili@mailinator.com',
-            'password'	    => Hash::make('P@$$w0rd!'),
+            'password'	    => Hash::make('Pa$$w0rd!'),
         ]);
         User::create([
             'name'		    => 'Travis Atkinson',
@@ -71,7 +71,7 @@ class UsersTableSeeder extends Seeder
             'status'		    => '1',
             'email_verified_at'		    => '2023-05-10 13:29:43',
             'email'		    => 'gyqehew@mailinator.com',
-            'password'	    => Hash::make('P@$$w0rd!'),
+            'password'	    => Hash::make('Pa$$w0rd!'),
         ]);
         User::create([
             'name'		    => 'Dillon Ortiz',
@@ -79,7 +79,7 @@ class UsersTableSeeder extends Seeder
             'status'		    => '1',
             'email_verified_at'		    => '2023-05-10 13:29:43',
             'email'		    => 'noxuqewuki@mailinator.com',
-            'password'	    => Hash::make('P@$$w0rd!'),
+            'password'	    => Hash::make('Pa$$w0rd!'),
         ]);
         User::create([
             'name'		    => 'Georgia Mcfadden',
@@ -87,7 +87,7 @@ class UsersTableSeeder extends Seeder
             'status'		    => '1',
             'email_verified_at'		    => '2023-05-10 13:29:43',
             'email'		    => 'terikuqari@mailinator.com',
-            'password'	    => Hash::make('P@$$w0rd!'),
+            'password'	    => Hash::make('Pa$$w0rd!'),
         ]);
         User::create([
             'name'		    => 'Phelan Roman',
@@ -95,7 +95,7 @@ class UsersTableSeeder extends Seeder
             'status'		    => '1',
             'email_verified_at'		    => '2023-05-10 13:29:43',
             'email'		    => 'mupunyl@mailinator.com',
-            'password'	    => Hash::make('P@$$w0rd!'),
+            'password'	    => Hash::make('Pa$$w0rd!'),
         ]);
     }
 }
