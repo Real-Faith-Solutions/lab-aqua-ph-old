@@ -33,49 +33,16 @@
                 <table id="generalTable" class="table table-borderless table-striped table-sm" style="border-radius: 3px; overflow: hidden;">
                 <thead class="thead-dark">
                 <tr>
-                    <th>Role Name</th>
-                    <th>Rights</th>
-                    <th>Action</th>
+                    <th>Role</th>
                 </tr>
                 </thead>
                 <tbody class="font-weight-light">
+                    @foreach ($roles as $role)
                     <tr>
-                        <td>SUPER ADMIN	SALES MANAGER</td>
-                        <td>-</td>
-                        <td>-
-                          {{-- <a class="btn btn-primary btn-sm"><i class="bi bi-pencil-fill"></i></a> --}}
-                        </td>
+                        <td>{{ $role -> role }}</td>
                     </tr>
-                    <tr>
-                        <td>MARKETING MANAGER</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>SERVICE COORDINATOR	ADMIN ASST.</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>FSR	MICRO ANALYST</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>PCHEM ANALYST</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>ICRO MANAGER</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>PCHEM MANAGER</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
+
+                    @endforeach
                 </tbody>
               </table>
             </div>

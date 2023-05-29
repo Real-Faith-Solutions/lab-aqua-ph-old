@@ -12,6 +12,7 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\LabAcceptanceController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UsersRoleController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\RightsManagementController;
 use App\Http\Controllers\AdminRegisteredCommand;
@@ -213,10 +214,7 @@ Route::group([
         Route::get('user', [CustomAuthController::class, 'getUsersRolePage']);
         Route::get('srole', [AdminRegisteredCommand::class, 'index'])->name('srole');
         Route::get('status/{id}', [AdminRegisteredCommand::class, 'status'])->name('status');
-        Route::get('role',  function()
-        {
-            return view('admin.user-management.role');
-        });
+        Route::get('role', [RoleController::class, 'index']);
         Route::get('add-role', [UsersRoleController::class, 'getUsersRolePage']);
         // Route::get('add-role',  function () {
         //     return view('admin.user-management.add_role');
