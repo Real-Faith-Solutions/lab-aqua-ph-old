@@ -88,7 +88,7 @@
                 <div id="collapseTwos" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         @if (Session::get('role') == 'pchem_manager' OR Session::get('role') == 'micro_manager' OR Session::get('role') == 'super_admin' OR Session::get('role') == 'laboratory_asst')
-                        <a class="collapse-item" href="" data-bs-toggle="modal" data-bs-target="#addLabAcceptance">Lab Acceptance</a> 
+                        <a class="collapse-item" href="" data-bs-toggle="modal" data-bs-target="#addLabAcceptance">Lab Acceptance</a>
                         <a class="collapse-item" href="{{ config('app.url') }}admin/record/lab-work-order">Lab Work Order</a>
                         <a class="collapse-item" href="{{ config('app.url') }}admin/record/lab-approval">Lab Approval</a>
                         @endif
@@ -143,7 +143,7 @@
                         <a class="collapse-item" href="{{ config('app.url') }}admin/user-management/srole">Users List</a>
                         @endif
                         <a class="collapse-item" href="{{ config('app.url') }}admin/user-management/role">Roles</a>
-                        
+
                     </div>
                 </div>
             </li>
@@ -234,7 +234,7 @@
                                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Activity Log
                                 </a> -->
-                                <div class="dropdown-divider"></div>
+                                {{-- <div class="dropdown-divider"></div> --}}
                                 <a class="dropdown-item" href="{{ config('app.url') }}logout">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
