@@ -24,7 +24,7 @@
                                         <input type="email" class="form-control form-control-user" name="email"
                                             aria-describedby="emailHelp" placeholder="Enter Email Address...">
                                     </div>
-                                    <a href="login.html" class="btn btn-primary btn-user btn-block">
+                                    <a href="#" class="btn btn-primary btn-user btn-block">
                                         Reset Password
                                     </a>
                                 </form>
