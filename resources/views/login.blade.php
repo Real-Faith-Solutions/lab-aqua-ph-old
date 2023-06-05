@@ -14,7 +14,7 @@
 
                                     <form class="user" method="POST" action="{{ route('login.custom') }}">
                                     @csrf
-                                    <h4 class="text-center">Welcome Back!</h4>
+                                    <h4 class="text-center">Welcome Back</h4>
                                     <div class="form-group mb-3">
                                         {{-- <input type="name" placeholder="Full Name" id="email" class="form-control form-control-user" name="name" required
                                             autofocus>
